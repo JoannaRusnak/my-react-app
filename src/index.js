@@ -7,10 +7,22 @@ import "./bootstrap/bootstrap.min.css";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-root.render(
-	<StrictMode>
-		<BrowserRouter>
-			<App />
-		</BrowserRouter>
-	</StrictMode>
-);
+// root.render(
+// 	<StrictMode>
+// 		<BrowserRouter>
+// 			<App />
+// 		</BrowserRouter>
+// 	</StrictMode>
+// );
+
+function ReactFirebaseAuth() {
+	return (
+		<StrictMode>
+			<BrowserRouter>
+				<App />
+			</BrowserRouter>
+		</StrictMode>
+	);
+}
+
+export default ReactFirebaseAuth;
