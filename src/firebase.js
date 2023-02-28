@@ -1,7 +1,6 @@
 import firebase from "firebase/app"
 import "firebase/auth"
 
-
 const REACT_APP_FIREBASE_API_KEY ="AIzaSyCeHjPnpq03TNdhrzfcOuVDeRmwuzb1qgM";
 const REACT_APP_FIREBASE_AUTH_DOMAIN="psiaapka-dev.firebaseapp.com";
 const REACT_APP_FIREBASE_PROJECT_ID="psiaapka-dev";
