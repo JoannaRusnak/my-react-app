@@ -23,10 +23,12 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
-	},
+		"eject": "react-scripts eject",
+    "build": "npm run build:main && npm run build:module",
+    "build:main": "webpack --mode production --entry ./src/index.js --output ./dist/main.js",
+    "build:module": "webpack --mode production --entry ./src/index.js --output ./dist/module.js --module-bind js=babel-loader"
+  },
 	"eslintConfig": {
 		"extends": [
 			"react-app",
